@@ -3,7 +3,7 @@ const path = require("path");
 const { Parser } = require("json2csv");
 
 // path to json file
-const jsonFilePath = path.join(__dirname, 'data.json')
+const jsonFilePath = path.join(__dirname, 'data.json');
 
 // read the json File
 try {

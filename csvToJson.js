@@ -10,8 +10,8 @@ const results = [];
 
 // read the csv file
 fs.createReadStream(csvFilePath)
-  .pipe(csv())
-  .on("data", (data) => results.push(data)).on('end', ()=>{
+  .pipe(csv()) // parses the csv into rows
+  .on("data", (data) => results.push(data)).on('end', ()=> {
     const jsonFilePath = path.join(__dirname, "data.json");
 
     try {
